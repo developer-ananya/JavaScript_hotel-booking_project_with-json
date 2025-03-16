@@ -1,0 +1,64 @@
+{
+  "hotel": [
+    {
+      "name": "ananya",
+      "lastname": "pandey",
+      "contactnum": "7389482948",
+      "identity": "6545644854",
+      "email": "sakshiananyapandey2003@gmail.com",
+      "person": "2",
+      "roomtype": "Double",
+      "checkindate": "2025-02-08",
+      "checkintime": "22:26",
+      "checkouttime": "12:55",
+      "checkoutdate": "2025-02-11",
+      "price": 700,
+      "id": "772e"
+    },
+    {
+      "name": "yasmeen",
+      "lastname": "khan",
+      "contactnum": "7722846324",
+      "identity": "6545644854",
+      "email": "kyasmeenkhna304@gmail.com",
+      "person": "2",
+      "roomtype": "double",
+      "checkindate": "2025-02-08",
+      "checkintime": "01:36 pm",
+      "checkoutdate": "2025-02-11",
+      "checkouttime": "04:50pm",
+      "price": 300,
+      "id": "604a"
+    },
+    {
+      "name": "Swail",
+      "lastname": "Khan",
+      "contactnum": "32546581",
+      "identity": "2325113",
+      "email": "kyasmeenkhan304@gmail.com",
+      "person": "2",
+      "roomtype": "Single",
+      "checkindate": "2025-03-07",
+      "checkintime": "18:20",
+      "checkouttime": "18:20",
+      "checkoutdate": "2025-03-04",
+      "price": 700,
+      "id": "94b1"
+    },
+    {
+      "id": "c332",
+      "name": "Swail",
+      "lastname": "Khan",
+      "contactnum": "32546581",
+      "identity": "2325113",
+      "email": "kyasmeenkhan304@gmail.com",
+      "person": "3",
+      "roomtype": "Double",
+      "checkindate": "2025-03-07",
+      "checkintime": "18:20",
+      "checkouttime": "18:20",
+      "checkoutdate": "2025-03-04",
+      "price": 500
+    }
+  ]
+}

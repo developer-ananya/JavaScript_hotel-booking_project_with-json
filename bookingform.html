@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bookingform.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+</head>
+<body>
+    
+
+<div id="booking" data-aos="zoom-in" data-aos-duration="2000">
+    <h2 data-aos="fade-up" data-aos-duration="2000">Hotel Booking</h2>
+    <p>Experience something new every moment</p>
+
+    <form >
+
+        <div id="form-name">
+            Name: <input type="text" placeholder="First Name" id="name"  required>
+            <input type="text" placeholder="Last Name" id="lname" required>
+        </div>
+        <div id="form-num">
+            Contact no. : <input type="text" placeholder="Mobile Number" id="number" required>
+        </div>
+
+        <div id="form-id">
+            Identity no. : <input type="text" placeholder="Any Id number" id="identiy" required>
+        </div>
+
+
+        <div id="form-mail">
+        Email *  :
+            <input type="email" placeholder="ex: myname@example.com" id="email" required>
+        </div>
+
+        <div id="form-room">
+            Room Type * :
+            <select  id="selectroom" required>
+                <option value="">Please Select</option>
+                <option value="Single">Single</option>
+                <option value="Double">Double</option>
+                <option value="Suite">Suite</option>
+            </select>
+        </div>
+
+        <div id="form-guest">
+            Number of Guests * : 
+            <select id="guest" required>
+                <option>1 Adult</option>
+                <option>2 Adults</option>
+                <option>3 Adults</option>
+                <option>Family</option>
+            </select>
+        </div>
+
+        <div id="form-checkin">
+            Check-in Date & Time * :
+            <input type="date" id="cdate" required>
+            <input type="time" id="ctime" required>
+        </div>
+
+        <div id="form-checkout">
+            Check-out Date and Time * :
+            <input type="date" id="odate" required>
+            <input type="time" id="otime" required>
+        </div>
+
+        <div id="form-request">
+            Special Requests : 
+            <textarea rows="4" ></textarea>
+        </div>
+        
+        <input  type="submit" id="submit-btn" onclick=" return ins()">
+    </form>
+</div>
+
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+
+    <script src="./crud.js"></script>
+</body>
+</html>

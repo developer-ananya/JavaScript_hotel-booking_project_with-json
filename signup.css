@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    background-image: url('https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?cs=srgb&dl=pexels-pixabay-258154.jpg&fm=jpg');
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(5px);
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#logo
+{    
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 200px; 
+    height: auto;
+
+}
+
+#signupform {
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    max-height: 90vh; 
+    text-align: center;
+    animation: slideIn 0.8s ease-in-out;
+    overflow: auto; 
+    position: relative; 
+    padding-top: 60px; 
+}
+@keyframes slideIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-weight: 900;
+    font-size: 30px;
+    color: #dcb105;
+}
+
+
+
+label {
+    font-size: 15px;
+    font-weight: 600;
+    display: block;
+    margin-top: 10px;
+}
+
+
+label[for="name"] {
+    color: #ffaa00;  
+}
+
+label[for="num"] {
+    color: #ffaa00;  
+}
+
+label[for="email"] {
+    color: #ffaa00;
+}
+
+label[for="pass"] {
+    color: #ffaa00;
+}
+
+label[for="cpass"] {
+    color: #ffaa00;
+}
+
+
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: #FFB200;
+    box-shadow: 0px 0px 8px rgba(255, 178, 0, 0.5);
+}
+
+input[type="password"] {
+    font-weight: bold;
+}
+
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: #FFB200;
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: #E09E00;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(255, 178, 0, 0.5);
+}
+
+
+p {
+    color: red;
+    font-size: 13px;
+    height: 18px;
+    margin: 0;
+    text-align: left;
+}

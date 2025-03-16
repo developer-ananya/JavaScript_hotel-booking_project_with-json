@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+</head>
+<body onload="checklogin()"> 
+  <a id="top"></a>
+
+    <nav >
+
+        <h1 class="navbar-logo aos-init aos-animate" data-aos="fade-down" data-aos-duration="3000" id="up">Thikana <span >Hotel </span>Booking</h1>
+        <ul id="navbar" data-aos="fade-left" data-aos-duration="1000">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        
+        <a  href="./login.html"><i  onmouseenter="icon()" onmouseleave="change()" id="icon" class="fa-solid fa-right-from-bracket"  data-aos="fade-left" data-aos-duration="2000"></i></a>
+        <a  href="./login.html" ><i onclick="logout()" onmouseenter="iconnn()" onmouseleave="changeee()" id="icon2" class="fa-solid fa-right-from-bracket"  data-aos="fade-left" data-aos-duration="2000"></i></a>
+    </nav>
+
+<!-- -----------------------               Swiper       ------------------------------------------------------------------------------------- -->
+
+ <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide">
+        <img src="./home-2-slider-2.jpg" alt="image">
+        <p id="text" data-aos="fade-up" data-aos-duration="3000">LUXARY AND COMFORT, REDEFINED  DAILY</p>
+        <button id="btn" onclick="booknow()">Book Now</button>
+      </div>
+
+      <div class="swiper-slide">
+        <img src="./home-1-slider.jpg" alt="image">
+        <p id="text"> COMFORT, STYLE,AND SERVICE REDEFINED DAILY</p>
+        <button id="btn" onclick="booknow()">Book Now</button>
+      </div>
+
+      <div class="swiper-slide">
+      <img src="./home-3-slider-3.jpg" alt="image">
+      <p id="text">CREATING MEMORIES, ONE STAY AT A TIME</p>
+      <button id="btn" onclick="booknow()">Book Now</button>
+      </div>
+
+      <div class="swiper-slide">
+      <img src="./banner4-1.jpg" alt="image">
+      <p id="text">BOOK YOUR DREAM HOTEL WITH HOTELERS</p>
+      <button id="btn" onclick="booknow()">Book Now</button>
+      </div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+<!-- ------------------------------------------------------------------------------------------------------------- -->
+
+<div id="info" data-aos="fade-up"
+data-aos-anchor-placement="center-bottom" data-aos-duration="800">
+
+  <div id="checkin">
+      <label for="checkin">Check-in</label>
+      <input type="date" id="checkininp">
+  </div>
+
+  <div id="checkout">
+      <label for="checkout">Check-out</label>
+      <input type="date" id="checkoutinp">
+  </div>
+
+  <div id="space">
+      <label for="rooms">Rooms</label>
+      <select id="room">
+          <option>1 Room</option>
+          <option>2 Rooms</option>
+          <option>3 Rooms</option>
+          <option>4+ Rooms</option>
+      </select>
+  </div>
+
+  <div id="guest">
+      <label for="guests">Guests</label>
+      <select id="guestoptn">
+          <option>1 Adult</option>
+          <option>2 Adults</option>
+          <option>3 Adults</option>
+          <option>Family</option>
+      </select>
+  </div>
+  
+  <a href="./room book.html" id="booking-btn" >Check Availability</a>
+</div>
+ 
+
+<!-- ------------------------------------------------------------------------------------- -->
+
+<div id="about">
+
+  <div id=" main-box-img">
+  <img data-aos="zoom-in-right" data-aos-duration="3000" id="img1" src="./about img1.jpg" alt="">
+  <img data-aos="zoom-in-left" data-aos-duration="3000"  id="img2" src="./about img 2.jpg" alt="">
+  </div>
+
+  <div id="main-box-text">
+    <h3> Stay in the heart of New York</h3>
+    <h2>Luxury furnished serviced apartments in Times Square</h2>
+    <p>Located in Times Square, CozyStay apartment hotel provide a peaceful, private retreat in the heart of one of the world’s
+       most iconic cities. Experience a sophisticated blend of professional services and home comforts. We proudly offers a full 
+       range of complimentary amenities and services that provide you with everything you need for an inspiring stay.</p>
+
+    <button class="about-btn">Start Exploring</button>
+
+  </div>
+
+</div>
+
+
+<!-- -------------------------------------------------------------------------------------- -->
+
+<div id="explore-room">
+<h3>EXPLORE YOUR ROOM</h3>
+<h2>Find Rooms Based On Intrests</h2>
+
+<div class="swiper mySwiper2">
+
+  <div class="swiper-wrapper">
+
+    <div class="swiper-slide">
+      <img src="./room list 1.jpg" />
+      <h4 data-aos="fade-left" data-aos-duration="1500">Double bed room</h4>
+      <h5 data-aos="fade-right" data-aos-duration="1000">5 GUEST ROOM</h5>
+      <h6><i class="fa-solid fa-square-parking"></i><i class="fa-solid fa-water-ladder"></i><i class="fa-solid fa-car"></i> <i class="fa-solid fa-wifi"></i></h6>
+      <a href="#" >Discover More</a>
+    </div>
+    <div class="swiper-slide">
+      <img  src="./room list 2.jpg" />
+      <h4>Studio Apartment Green</h4>
+      <h5>5 GUEST ROOM</h5>
+      <h6><i class="fa-solid fa-square-parking"></i><i class="fa-solid fa-water-ladder"></i><i class="fa-solid fa-car"></i> <i class="fa-solid fa-wifi"></i></h6>
+      <a href="#">Discover More</a>
+    </div>
+    <div class="swiper-slide">
+      <img  src="./room list 3.jpg" />
+      <h4>Luxury Suit</h4>
+      <h5>4 GUEST ROOM</h5>
+      <h6><i class="fa-solid fa-square-parking"></i><i class="fa-solid fa-water-ladder"></i><i class="fa-solid fa-car"></i> <i class="fa-solid fa-wifi"></i></h6>
+      <a href="#">Discover More</a>
+    </div>
+    <div class="swiper-slide">
+      <img  src="./room list 4.jpg" />
+      <h4>Studio Apartment</h4>
+      <h5>5 GUEST ROOM</h5>
+      <h6><i class="fa-solid fa-square-parking"></i><i class="fa-solid fa-water-ladder"></i><i class="fa-solid fa-car"></i> <i class="fa-solid fa-wifi"></i></h6>
+      <a href="#">Discover More</a>
+    </div>
+    <div class="swiper-slide">
+      <img src="./room list 5.jpg" />
+      <h4>Suit Room With Pool</h4>
+      <h5>9 GUEST ROOM</h5>
+      <h6><i class="fa-solid fa-square-parking"></i><i class="fa-solid fa-water-ladder"></i><i class="fa-solid fa-car"></i> <i class="fa-solid fa-wifi"></i></h6>
+      <a href="#">Discover More</a>
+    </div>
+    
+  </div>
+  <div class="swiper-pagination2"></div>
+</div>
+
+
+</div>
+
+
+
+<!-- ------------------------------------------------------------------------------------- -->
+<section id="service" >
+  <h3>ELEVATE YOUR STAY</h3>
+  <h2>Stay In Luxury With Top-Rated Amenities</h2>
+
+  <div id="service-item" data-aos="fade-right"
+  data-aos-offset="200" data-aos-duration="2000"
+  data-aos-easing="ease-in-sine" >
+  
+      <div id="features">
+              <i class="fa-solid fa-square-parking"></i> <h4>Parking Facility</h4>
+              <p>Secure and spacious parking available for guests.</p>
+          </div>
+      
+
+      <div id="features"><i class="fa-solid fa-spa"></i>
+          <h4>Wellness & Relaxation</h4>
+          <p>Enjoy spa, sauna, and wellness treatments.</p>
+      </div>
+
+      <div id="features"><i class="fa-solid fa-taxi"></i>
+          <h4>Pick-Up Service</h4>
+          <p>Convenient airport and city pick-up service.</p>
+      </div>
+
+      <div id="features"><i class="fa-solid fa-store"></i>
+          <h4>Clothing Cleaning Service</h4>
+          <p> Fast and reliable laundry and dry cleaning.</p>
+      </div>
+
+      <div id="features"><i class="fa-solid fa-wifi"></i>
+          <h4>Free High-Speed WiFi</h4>
+          <p>Stay connected with seamless internet access.</p>
+      </div>
+
+      <div id="features"><i class="fa-solid fa-mug-hot"></i>
+          <h4>Morning Refreshment</h4>
+          <p>Start your day with complimentary breakfast.</p>
+      </div>
+
+      <div id="features"><i class="fa-solid fa-swimming-pool"></i>
+          <h4>Outdoor Pool</h4>
+          <p>Relax and unwind in our scenic pool.</p>
+      </div>
+
+      <div id="features"><i class="fa-solid fa-video"></i>
+          <h4>Security Camera</h4>
+          <p>24/7 surveillance for guest safety and security.</p>
+      </div>
+
+      <div id="features"><i class="fa-solid fa-broom"></i>
+          <h4>Room Services</h4>
+          <p> Delicious meals delivered to your room anytime.</p>
+      </div>
+  </div>
+
+</section>
+
+<!-- ------------------------------------------------------------------------------------- -->
+
+<section id="menu">
+  <h3>HOTEL BEST MENUS</h3>
+  <h1>Unique Specialty Foods</h1>
+
+  <div id="menu-main">
+      <div id="menu-item" data-aos="fade-right" >
+          <img src="./food1.png" alt="Pasta With Fish">
+          <div id="details">
+              <h2>Pasta With Fish</h2>
+              <p>Pasta with fish is with gravy and dry</p>
+          </div>
+          <span id="price">Rs. 500</span>
+          <span id= "starter">Starter</span>
+      </div>
+
+
+
+      <div id="menu-item"  data-aos="fade-left">
+          <img src="./food2.png" alt="Spaghetti">
+          <div id="details">
+              <h2>Spaghetti</h2>
+              <p>spaghetti is our very delicious food</p>
+          </div>
+          <span id="price">Rs. 370</span>
+          <span id= "starter">New</span>
+      </div>
+
+      <div id="menu-item" data-aos="fade-right">
+          <img src="./food3.png" alt="Vegetarian Soup">
+          <div id="details">
+              <h2>Vegetarian Soup</h2>
+              <p>Vegetarian soup is made of vegetable and fruits</p>
+          </div>
+          <span id="price">Rs. 420</span>
+          <span id= "starter">Gluten Free</span>
+      </div>
+
+      <div id="menu-item" data-aos="fade-left">
+          <img src="./food4.png" alt="Noodles">
+          <div id="details">
+              <h2>Noodles</h2>
+              <p>Noodles are delicious, versatile, and satisfying.</p>
+          </div>
+          <span id="price">Rs. 300</span>
+          <span id= "starter">New</span>
+      </div>
+
+
+      <div id="menu-item" data-aos="fade-right">
+          <img src="./food5.png" alt="Vegetarian Fried">
+          <div id="details">
+              <h2>Vegetarian Fried</h2>
+              <p>Crispy, flavorful, savory, crunchy, delicious.</p>
+          </div>
+          <span id="price">Rs. 800</span>
+          <span id= "starter">New</span>
+      </div>
+
+      <div id="menu-item"  data-aos="fade-left">
+          <img src="./food6.png" alt="Salmon Pasta">
+          <div id="details">
+              <h2>Salmon Pasta</h2>
+              <p>Delicious, creamy, rich, flavorful, satisfying.</p>
+          </div>
+          <span id="price">Rs. 710</span>
+          <span id= "starter">Fish</span>
+      </div>
+  </div>
+</section>
+
+
+<!-- ------------------------------------------------------------------------------------- -->
+<section id="team">
+  <h3>INTRODUCE OUR TEAM</h3>
+  <h1>Discover Our Hotel Team</h1>
+
+  <div id="team-main">
+      <div id="team-member">
+          <img  data-aos="fade-down" data-aos-duration="5000" src="./team1 main.jpg" alt="Benjamin Franklin">
+          <h2>Benjamin Franklin</h2>
+          <p>Director Marketing</p>
+      </div>
+
+      <div id="team-member">
+          <img  data-aos="fade-down" data-aos-duration="5000" src="./team2 main.jpg" alt="Christina Maria">
+          <h2>Christina Maria</h2>
+          <p>Concierge</p>
+      </div>
+
+      <div id="team-member">
+          <img  data-aos="fade-down" data-aos-duration="5000" src="./team-3.jpg" alt="Kathleen Pamela">
+          <h2>Kathleen Pamela</h2>
+          <p>Housekeeping Manager</p>
+      </div>
+  </div>
+</section>
+
+<!-- ------------------------------------------------------------------------------------- -->
+
+<section>
+  <div id="contact" >
+
+      <div id="contact-us"data-aos="fade-up">
+          <h3>Contact Us</h3>
+          <p><i class="fas fa-map-marker-alt"></i> No: 58 A, East Madison Street, <br>Baltimore, MD, USA 4508</p>
+          <p><i class="fas fa-phone"></i> +91 7389482948</p>
+          <p><i class="fas fa-envelope"></i> support@example.com</p>
+      </div>
+
+ 
+      <div id= "information" data-aos="fade-left">
+          <h3>Information</h3>
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Rooms</a></li>
+              <li><a href="#">Latest News</a></li>
+              <li><a href="#">Gallery</a></li>
+          </ul>
+      </div>
+
+ 
+      <div id="support"data-aos="fade-down">
+          <h3>Support</h3>
+          <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Contact</a></li>
+          </ul>
+      </div>
+
+
+      <div id="newsletter" data-aos="fade-right">
+          <h3>Our Newsletter</h3>
+          <p>Stay updated with our latest news and offers.</p>
+          <div id="mail-box">
+              <input type="email" placeholder="Email Address">
+              <button><i class="fas fa-paper-plane"></i></button>
+          </div>
+
+          <p><a href="#">Privacy Policy</a></p>
+      </div>
+
+  </div>
+</section>
+
+
+
+<!-- ------------------------------------------------------------------------------------------------------------- -->
+
+
+<footer>
+  <div id="footer-main"  >
+      <div id="footer-left" >
+          <p>© Hotel booking website by Ananya Pandey | <a href="#">Contact Us</a></p>
+      </div>
+      <div id="footer-center">
+          <p><a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a></p>
+      </div>
+      <div id="footer-right">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <div id="top">
+        <a href="#top"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ------------------------------------------------------------------------------------------------------------- -->
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="swiper.js"></script>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="typed.js"></script>
+
+<script src="./sweet.js"></script>
+
+<script src="login signup.js"></script>
+<script src="home.js"></script>
+</body>
+</html>

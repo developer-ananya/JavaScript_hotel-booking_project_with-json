@@ -1,0 +1,483 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8); 
+    z-index: 1000; 
+    transition: all 0.3s ease-in-out;
+}
+
+h1 {
+    color: white;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+}
+
+h1 span {
+    color: #f39c12;
+}
+
+#navbar {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar li {
+    display: inline;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+#navbar a:hover {
+    background-color: #f39c12;
+    border-radius: 5px;
+    color: #333;
+}
+
+/* ------------------------------------------------------ */
+
+#room img{
+    width: 97.8vw;
+    height: 50vh;
+
+}
+#room h1{
+ font-size: 40px;
+ color: white;
+ font-weight: 800;
+
+ text-align: center;
+ justify-content: center;
+margin-top: -14%;
+
+ 
+}
+#room div{
+color: white;
+margin-left: 50%;
+font-size: 20px;
+font-weight: 800;
+}
+#room a{
+color: white;
+text-decoration: none;
+}
+
+/* -------------------------------------------------------------------------------- */
+#available{
+    display: flex;
+    margin-top: 10%;
+
+}
+
+
+#check{
+    margin-left: 10%;
+    
+
+}
+
+
+#room-details {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    width: 100%;
+    color: black;
+    margin-top: 2%;
+    border: 0.5px solid black;
+
+}
+
+
+#room-image {
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#room-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#price {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: #a07d55;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+#room-info {
+    margin-top: 15px;
+    
+}
+
+#room-info a {
+    text-decoration: none;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+    cursor: pointer;
+    font-weight: 900;
+}
+#room-info a:hover{
+    color: #8b6842;
+}
+
+#room-info p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+
+#room-icons {
+    display: flex;
+    gap: 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+
+#read-more {
+    text-decoration: none;
+    font-size: 14px;
+    color: #a07d55;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+#read-more:hover {
+    text-decoration: underline;
+    color: #8b6842;
+}
+
+
+#room-amenities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #444;
+
+
+}
+
+
+
+#info {
+    display: block;
+    background:#eadcc7;  
+    padding: 20px;
+    color: #000000;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 30vw;
+    margin-left: 10%;
+    height: 62vh;
+    width: 400px;
+    margin-top: 30px;
+    border-radius: 10px;
+    position: sticky;
+    top: 10%;
+    
+ 
+}
+
+
+#checkin, #checkout, #space, #guest {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+}
+
+label {
+    color: white;
+    font-size: 18px;
+    color: #000000;
+    text-transform: uppercase;
+    margin-top: 15px;
+    
+
+}
+option {
+    background: #1e1e1e;
+    color: white;
+    font-size: 16px;
+}
+
+input, select {
+    padding: 10px;
+    border: 1px solid #201d1d;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+    color: #000000;
+
+}
+input::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+}
+
+
+#booking-btn {
+    cursor: pointer;
+    border: 1px solid #a07d55;
+    text-decoration: none;
+    color: #000000;
+    text-transform: uppercase;
+    background-color: #a07d55;
+    padding: 10px;
+    position: absolute;
+    top: 370px;
+    width: 23vw;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+#booking-btn:hover {
+    background-color: rgb(191, 153, 118);
+    border: 2px solid #c2a680;
+
+}
+
+
+
+
+/* -------------------------------------------------------------------------- */
+section {
+    background-color:#d4bb92; 
+    color: black;
+    padding: 40px 0;
+    margin-top: 2%;
+}
+
+
+#contact {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+
+}
+
+
+#contact-us, #information, #support, #newsletter {
+    width: 22%;
+}
+
+
+#contact h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #b68549;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+
+#contact-us p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: black;
+    padding-top: 4%;
+
+
+}
+
+#contact-us p i {
+    margin-right: 8px;
+}
+
+
+#information ul, #support ul {
+    list-style: none;
+    padding: 0;
+}
+
+#information ul li, #support ul li {
+    margin-bottom: 10px;
+}
+
+#information ul li a, #support ul li a {
+    text-decoration: none;
+    color: black;
+
+    transition: color 0.3s;
+}
+
+#information ul li a:hover, #support ul li a:hover {
+    color: black;
+}
+
+
+#mail-box {
+    display: flex;
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+#mail-box input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    background: transparent;
+    color: black;
+    outline: none;
+    
+}
+
+#mail-box button {
+    border: none;
+    background:#a58b60;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#mail-box button:hover {
+    background:#b68549;
+}
+
+#newsletter p a {
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+}
+
+#newsletter p a:hover {
+    color: #ffffff;
+}
+
+
+
+/* --------------------------------------------- */
+
+
+
+
+footer {
+    background-color: #39394b; 
+    box-shadow: #a58b60;
+    color: white;
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+#footer-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+#footer-left p {
+    margin: 0;
+    font-size: 15px;
+}
+
+
+#footer-center p {
+    margin: 0;
+    font-size: 15px;
+
+}
+
+
+#footer-right {
+    display: flex;
+    gap: 15px;
+}
+
+#footer-right a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out, color 0.3s;
+}
+
+#footer-right a:hover {
+    transform: scale(1.2);
+    color: #a58b60; 
+}
+
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+    color: #c6a375;
+}
+#top{
+
+    justify-content: center;
+    
+
+    
+}
+#top i{
+    border-radius: 50%;
+    border: 2px solid #a58b60;
+    color: #000000;
+    padding: 8px 8px;
+    margin-left: 100%;
+    background-color: white;
+    cursor: pointer;
+
+    
+
+}
+#top i:hover{
+    background-color: #b19068;
+}
+/* --------------------------------------------- */
