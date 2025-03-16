@@ -217,6 +217,7 @@ let finalupdate=(id)=>{
     )
     })
     update();
+    location.reload();
 
 
 return false
